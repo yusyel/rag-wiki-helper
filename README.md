@@ -63,6 +63,16 @@ For example, if someone asks a question about insurance, the `!insurance` shortc
 | model_distilbert_docs_4o_mini | 0.7919616742309635    | 0.9222390317700454    | 0.7923861153134987    |
 | model_distilbert_docs_llama    | 0.7912455874936968    | 0.9213313161875946    | 0.791670028576232     |
 
+### Hybrid Search (Haystack Ragas)
+
+`results["doc_rec_evaluator"]["score"], results["doc_mrr_evaluator"]["score"]`
+
+| Setup                      | Doc Rec (Hit Rate)     | Doc MRR               |
+|---------------------------|------------------------|-----------------------|
+| Hybrid Search - Run 1     | 0.9531013615733737     | 0.8307513867876953    |
+| Hybrid Search - Run 2     | 0.9521936459909228     | 0.8366717095310136    |
+| Reranked Hybrid Search    | 0.9515885022692889     | 0.8626122037317197    |
+
 
 ### Haystack Ragas Evaluator Answer relevancy
 
