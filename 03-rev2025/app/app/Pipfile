@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+verify_ssl = true
+
+[packages]
+torch = {version = "*", index = "pytorch-cpu"}
+haystack-ai = "*"
+qdrant-haystack = "*"
+streamlit = "*"
+fastembed-haystack = "*"
+python-dotenv = "*"
+google-genai-haystack = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.13"
